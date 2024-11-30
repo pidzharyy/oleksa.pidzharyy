@@ -1,0 +1,77 @@
+.back {
+    display: flex;
+    align-items: center;
+    color: #777;
+    margin-top: 2em;
+}
+
+.back:hover {
+    color: #900;
+}
+
+#partner {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#partner .title {
+    background-image: url("../img/gradient-line.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    font-size: 1.75rem;
+    /* letter-spacing: .1em; */
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    color: #888;
+    padding-bottom: .5em;
+    margin-top: .5em;
+    margin-bottom: 1.75em;
+    text-align: center;
+}
+
+#partner h1 {
+    font-size: 1.35rem;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.float-box {
+    background-color: #fff;
+    display: block;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    width: 180px;
+}
+
+#partner .txt-box {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#partner p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+#partner h3 {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+#partner h3:first-of-type {
+    margin-top: 8px;
+}
+
+@media screen and (max-width:1020px) {
+
+    #partner {
+        margin-top:70px;
+    }
+}

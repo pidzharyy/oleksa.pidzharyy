@@ -1,0 +1,187 @@
+#blog h1 {
+    text-align: center;
+    background-image: url("../img/gradient-line.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #888;
+    padding-bottom: .5em;
+    /* margin-top: .5em; */
+    margin-bottom: 1.5em;
+}
+
+.submenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.submenu form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #777;
+    margin-bottom: 2em;
+}
+
+.submenu form input {
+    padding: 5px 15px;
+    color: #999;
+    margin-right: .75em;
+}
+
+.submenu form select {
+    padding: 5px 12px;
+}
+
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* text-align: justify; */
+    margin-left: -2.5%;
+    margin-right: -2.5%;
+}
+
+.blog-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    color: #777;
+}
+
+.blog {
+    margin-left: -1.5%;
+    margin-right: -1.5%;
+}
+
+.blog-item {
+    display: inline-block;
+    max-width: 30.33%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    width: auto;
+    margin-bottom: 2.5em;
+    transition: transform .3s ease;
+}
+
+.blog-item > a {
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.blog-item > a span {
+    display: block;
+    margin: 1em 0 .5em;
+}
+
+.blog-item img {
+    position: relative;
+    filter:drop-shadow(2px 2px 3px #888);
+}
+
+.blog-item .mov::after {
+    background-image: url("../img/video.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    transform: translateX(-50%) translateY(-50%) translateY(-20px);
+    opacity: .5;
+    z-index: 1;
+    transition: opacity .5s ease;
+}
+
+.blog-item .mov:hover::after {
+    opacity: .7;
+}
+
+.blog-item:hover {
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 1280px) {
+
+    .blog {
+        margin-left: -1.5%;
+        margin-right: -1.5%;
+    }
+
+    .blog-item {
+        max-width: 30%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+    }
+
+    #blog .blog-item .blog-cover img {
+        max-height: 26vw;
+    }
+}
+
+@media screen and (max-width:1020px) {
+
+    #blog {
+        margin-top:70px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .blog {
+        margin-left: -2.5%;
+        margin-right: -2.5%;
+    }
+    
+    .blog-item {
+        display: inline-block;
+        max-width: 45%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+
+    .blog-item p {
+        font-size: .95rem;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    .submenu form {
+        margin-bottom: 1em;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .submenu form input,
+    .submenu form select {
+        width: 85%;
+    }
+
+    .submenu {
+        margin-bottom: 1em;
+    }
+
+    .blog-item > a {
+        font-size: 1rem;
+    }
+
+    .blog-item p {
+        font-size: .85rem;
+    }
+
+}

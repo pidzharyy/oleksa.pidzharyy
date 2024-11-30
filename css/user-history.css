@@ -1,0 +1,195 @@
+.user-layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-layout>:first-child {
+    margin-right: 40px;
+    max-width: 200px;
+}
+
+.user-layout .user-content {
+    width: calc(100% - 240px);
+}
+
+.user-menu .title {
+    font-size: 1.25em;
+}
+
+.user-content .title {
+    font-weight: 400;
+}
+
+.orders-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.orders-info > * {
+    margin-right: 1em;
+}
+
+.order {
+    border-top: 4px solid #ccc;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.order h4 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.orders-numb,
+.orders-sum,
+.order-data {
+    font-size: .75em;
+    color: #777;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+#user .data,
+.order-data .data {
+    font-weight: 600;
+    color: #333;
+}
+
+.order-title .data {
+    font-size: .75em;
+}
+
+.order-data .addr {
+    width: 100%;
+}
+
+.order-data > div {
+    margin-right: 1.5em;
+    margin-bottom: .5em;
+}
+
+.details {
+    font-size: .85;
+    color: #777;
+    font-weight: 600;
+    margin-top: .5em;
+}
+
+#user .row {
+    font-size: .9em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 3px 0 0;
+    margin-bottom: 7px;
+}
+
+#user .overall {
+    padding-top: 10px;
+    font-weight: 700;
+}
+
+#user .row:not(.r1) {
+    border-top: 1px solid #ccc;
+}
+
+#user .col:not(:first-child) {
+    margin-left: 10px;
+}
+
+#user .col a {
+    display: block;
+}
+
+#user .c1 {
+    flex-basis: 40px;
+    max-width: 40px;
+}
+
+#user .c2 {
+    max-width: 240px;
+    margin-right: auto;
+}
+
+#user .c3 {
+    flex-basis: 20px;
+    max-width: 20px;
+    text-align: right;
+}
+
+#user .c4 {
+    flex-basis: 95px;
+    max-width: 95px;
+    text-align: right;
+    color: #333;
+    font-weight: 600;
+}
+
+#user .c4 span {
+    font-weight: 600;
+}
+
+#user .overall .c4 {
+    font-weight: 700;
+}
+
+#user .author {
+    color: #333;
+    font-size: .8em;
+    margin-top: .25em;
+    font-weight: 600;
+}
+
+#user .col .info {
+    font-size: .8em;
+    color: #888;
+    margin-top: .25em;
+}
+
+#user .col span {
+    font-size: .8em;
+    color: #333;
+}
+
+#user a {
+    display: block;
+    color: #333;
+}
+
+#user a:hover {
+    color: #900;
+}
+
+#user h2 {
+    font-size: .95em;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: .25em;
+    color: #333;
+}
+
+#user .numb {
+    color: #333;
+    font-size: .95em;
+    text-align: right;
+}
+
+@media screen and (max-width:700px) {
+    
+    #user .c2 {
+        max-width: 100%;
+        width: calc(100% - 75px);
+        margin-right: 0;
+    }
+
+    .user-layout>:first-child {
+        margin-right: 0;
+        max-width: none;
+    }
+    
+    .user-layout .user-content {
+        width: 100%;
+    }
+}

@@ -1,0 +1,170 @@
+.overlay {
+    background-color: #000;
+    opacity: .7;
+    mix-blend-mode: multiply;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    top:0;
+    right:0;
+}
+
+#registration {
+    background-color: #fff;
+    text-align: center;
+    font-size: .9em;
+    max-width: 320px;
+    padding: 25px;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index: 99;
+    min-height: 100vh;
+    filter: drop-shadow(-4px 0 4px #222);
+}
+
+#registration a {
+    display: block;
+    color: #333;
+    margin: .5em 0;
+}
+
+#registration a:hover {
+    color: #900;
+}
+
+#registration h2 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #777;
+}
+
+#registration::after {
+    display: block;
+    font-size: 1.45em;
+    /* background-color: #bbb; */
+    /* border-right: 1px solid #ddd; */
+    /* border-bottom: 1px solid #ddd; */
+    content:"✕";
+    color: #777;
+    position: absolute;
+    left:0;
+    top:0;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+#registration:hover::after {
+    color: #900;
+    /* background-color: #900; */
+}
+
+#registration h4 {
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+#registration form {
+    margin: auto;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+#registration form span {
+    display: inline-block;
+    font-size: .85em;
+    color: #999;
+}
+
+#registration input[type="checkbox"] {
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+}
+
+#registration input[type="text"] {
+    background: transparent;
+    border: 1px solid #ccc;
+    width: 100%;
+    color: #bbb;
+    font-size: .95em;
+    padding: 8px 12px;
+    margin: .5em 0;
+}
+
+#registration input[type="submit"] {
+    background-color:#800;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    font-size: .85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 8px 12px;
+    margin: .5em 0;
+    transition: background-color .2s ease;
+}
+
+#registration input[type="submit"]:hover {
+    background-color:#a00;
+}
+
+.sign {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#registration button {
+    cursor: pointer;
+    color: #fff;
+    padding: 3px 7px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 80px;
+    height: 30px;
+    margin: 0 .25em .5em 0;
+    font-size: .75em;
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+
+.small {
+    font-size: .85em;
+}
+
+.center {
+    text-align: center;
+}
+
+.bd {
+    font-weight: 600;
+}
+
+#registration button:hover {
+    opacity:.8;
+}
+
+#registration button.fb { background-color:#395185; }
+#registration button.google { color:#333; background-color:#ccc; }
+#registration button.apple { background-color:#444; }
+
+#registration button img {
+    max-width: 15px;
+    margin-right: 8px;
+}
+
+#registration button.google img {
+    margin-right: 6px;
+}
+
+#registration button.fb img {
+    margin-right: 1px;
+}

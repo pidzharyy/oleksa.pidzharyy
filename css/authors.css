@@ -1,0 +1,86 @@
+#authors h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #888;
+    background-image: url("../img/gradient-line.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    padding-bottom: .5em;
+    margin-top: .5em;
+    margin-bottom: 1.75em;
+}
+
+.authors {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.author {
+    max-width: 240px;
+    width: calc(16.6% - 30px);
+    margin: 15px; 
+}
+
+.author {
+    transition: transform .5s ease;
+}
+
+.author:hover {
+    transform: scale(1.03);
+}
+
+/* .author img {
+    transition: transform .5s ease;
+}
+
+.author:hover img {
+    transform: scale(1.03);
+} */
+
+.author h3 {
+    margin-top: .5em;
+    line-height: 1;
+}
+
+.author h3 a {
+    color: #333;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.author:hover h3 a {
+    color: #900;
+}
+
+@media screen and (max-width:1080px) {
+
+    .author {
+        width: calc(20% - 30px);
+    }
+}
+
+@media screen and (max-width:1020px) {
+
+    #authors {
+        margin-top:70px;
+    }
+}
+
+@media screen and (max-width:920px) {
+
+    .author {
+        width: calc(25% - 30px);
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .author {
+        width: calc(33.33% - 30px);
+    }
+}

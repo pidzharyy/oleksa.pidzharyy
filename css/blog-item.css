@@ -1,0 +1,152 @@
+.back {
+    display: flex;
+    align-items: center;
+    color: #777;
+    margin-top: 2em;
+}
+
+.back:hover {
+    color: #900;
+}
+
+.share {
+    /* border-top: 1px solid #ccc; */
+    /* padding-top: 1em; */
+}
+
+#blog-item {
+    margin-bottom: 2em;
+}
+
+#blog-item .title {
+    background-image: url("../img/gradient-line.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    font-size: 1.75rem;
+    /* letter-spacing: .1em; */
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    color: #888;
+    padding-bottom: .5em;
+    margin-top: .5em;
+    margin-bottom: 1.75em;
+    text-align: center;
+}
+
+#blog-item h1 {
+    font-size: 1.35rem;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+#blog-item .img-box {
+    margin-bottom: 2em;
+}
+
+#blog-item .txt-box {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#blog-item p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+#blog-item h4 {
+    font-size: 1.1em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+#blog-item h3:first-of-type {
+    margin-top: 8px;
+}
+
+#blog-item ol {
+    padding-left: 1em;
+}
+
+#blog-item li {
+    padding-left: .5em;
+}
+
+#blog-item .phone {
+    line-height: 2;
+}
+
+#blog-item .books {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px -15px;
+}
+
+.books .book {
+    width: calc(25% - 30px);
+    margin: 0 15px 30px;
+}
+
+.tags {
+    border-top: 1px solid #ccc;
+    letter-spacing: .02em;
+    color: #888;
+    font-style: italic;
+    padding-top: 1em;
+}
+
+.tags a {
+    display: inline-block;
+    margin-right: 1em;
+    color: #888;
+    font-style: italic;
+}
+
+.tags a:hover {
+    color: #900;
+}
+
+.sind a {
+    margin-right: .5em;
+}
+
+.blog-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-nav a {
+    color: #777;
+    display: flex;
+    align-items: center;
+}
+
+.blog-nav a:hover {
+    color: #900;
+}
+
+.prev {
+    transform: rotate(180deg);
+}
+
+/* .back {
+    display: flex;
+    align-items: center;
+    color: #777;
+    margin-top: 2em;
+}
+
+.back:hover {
+    color: #900;
+} */
+
+@media screen and (max-width:1020px) {
+
+    #blog-item {
+        margin-top:70px;
+    }
+}

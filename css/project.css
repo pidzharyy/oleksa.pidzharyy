@@ -1,0 +1,108 @@
+.back {
+    display: flex;
+    align-items: center;
+    color: #777;
+    margin-top: 2em;
+}
+
+.back:hover {
+    color: #900;
+}
+
+#project {
+    margin-bottom: 2em;
+}
+
+#project .title {
+    background-image: url("../img/gradient-line.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    font-size: 1.75rem;
+    /* letter-spacing: .1em; */
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    color: #888;
+    padding-bottom: .5em;
+    margin-top: .5em;
+    margin-bottom: 1.75em;
+    text-align: center;
+}
+
+#project h1 {
+    font-size: 1.35rem;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.float-box {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    max-width: 280px;
+}
+
+#project .txt-box {
+    font-size: 1.05em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#project p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+#project h3 {
+    font-size: 1.25em;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+#project h3:first-of-type {
+    margin-top: 8px;
+}
+
+#project ol {
+    padding-left: 1em;
+}
+
+#project li {
+    padding-left: .5em;
+}
+
+#project .phone {
+    line-height: 2;
+}
+
+#project .books {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px -15px;
+}
+
+.books .book {
+    width: calc(25% - 30px);
+    margin: 0 15px 30px;
+}
+
+/* .back {
+    display: flex;
+    align-items: center;
+    color: #777;
+    margin-top: 2em;
+}
+
+.back:hover {
+    color: #900;
+} */
+
+@media screen and (max-width:1020px) {
+
+    #project {
+        margin-top:70px;
+    }
+}

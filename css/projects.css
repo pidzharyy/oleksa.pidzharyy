@@ -1,0 +1,89 @@
+#projects {
+    margin-bottom: 2em;
+}
+
+#projects .title {
+    background-image: url("../img/gradient-line.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888;
+    padding-bottom: .5em;
+    margin-top: .5em;
+    margin-bottom: 1.75em;
+    text-align: center;
+}
+
+#projects ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -25px;
+}
+
+#projects ul li {
+    margin: 0 25px 30px 25px;
+    width: calc(33.33% - 50px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: .9em;
+}
+
+#projects ul li a {
+    color: #333;
+    display: block;
+    /* margin: auto; */
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: .02em;
+    transition: transform .5s ease;
+}
+
+#projects ul li a:hover {
+    color: #900;
+    transform: scale(1.03);
+}
+
+#projects ul li a span,
+#projects ul li a span img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+#projects ul li a span img {
+    margin-bottom: 1.25em;
+    filter: drop-shadow(2px 2px 3px #888);
+}
+
+@media screen and (max-width:1020px) {
+
+    #projects {
+        margin-top:70px;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    #projects ul {
+        margin: 0 -10px;
+    }
+    
+    #projects ul li {
+        margin: 0 10px 20px 10px;
+        padding: 10px 10px 20px;
+        width: calc(50% - 20px);
+        font-size: .75em;
+    }   
+}

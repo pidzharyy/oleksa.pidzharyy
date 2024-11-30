@@ -1,0 +1,44 @@
+#author h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1em;
+}
+
+#author .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#author .row .img-box {
+    max-width: 240px;
+    margin-right: 40px;
+}
+
+#author .row .txt-box {
+    width: calc(100% - 280px);
+    font-size: 1.1em;
+}
+
+.txt-box p {
+    line-height: 1.6;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    color: #777;
+    margin-top: 2em;
+}
+
+.back:hover {
+    color: #900;
+}
+
+#books {
+    margin-bottom: 2em;
+}
+
+#books h2 {
+    text-align: left;
+    margin-left: 50px;
+    border-bottom: 1px solid #ccc;
+}

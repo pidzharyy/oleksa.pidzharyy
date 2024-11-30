@@ -1,0 +1,117 @@
+#partners {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#partners .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#partners .row.contact {
+    justify-content: flex-start;
+}
+
+#partners .row .title-box {
+    flex-basis: 200px;
+}
+
+#partners .row.contact .title-box {
+    flex-basis: 400px;
+}
+
+#partners .txt-box {
+    line-height: 1.6;
+    margin-bottom: 1em;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#partners .title {
+    /* border-bottom: 1px solid #ccc; */
+    background-image: url("../img/gradient-line.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    font-size: 1.5rem;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888;
+    padding-bottom: .5em;
+    margin-top: .5em;
+    margin-bottom: 1.75em;
+}
+
+#partners ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+}
+
+#partners ul li {
+    background-color: #fff;
+    margin: 0 15px 30px 15px;
+    padding: 12px 12px 20px;
+    width: calc(33.33% - 60px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .9em;
+    transition: transform .3s ease;
+}
+
+#partners ul li a {
+    color: #333;
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+#partners ul li a:hover {
+    color: #900;
+}
+
+#partners ul li:hover {
+    transform: scale(1.03);
+}
+
+#partners ul li a span,
+#partners ul li a span img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+#partners ul li a span img {
+    max-height: 160px;
+}
+
+@media screen and (max-width:1020px) {
+
+    #partners {
+        margin-top:70px;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    #partners ul {
+        margin: 0 -10px;
+    }
+    
+    #partners ul li {
+        margin: 0 10px 20px 10px;
+        padding: 10px 10px 20px;
+        width: calc(50% - 20px);
+        font-size: .75em;
+    }   
+}
